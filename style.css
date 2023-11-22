@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    padding: 30px;
+    color: rgb(26, 212, 171);
+    text-align: center;
+}
+form{
+    margin: 30px;
+    border: 4px solid #030f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    height: 30%;
+}
+
+.u_input{
+    display: flex;
+    flex-direction: column;
+}
+.u_input p{
+
+    display: block;
+    margin: 20px 0px 10px 10px;
+}
+.display_body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.u_input input{
+    padding: 10px;
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+
+form button{
+    padding: 10px;
+    width: 300px;
+    margin-top: 20px;
+    color: #004190;
+    font-weight: bold;
+    background-color: #668fc1;
+    border-radius: 5px;
+}
+/* right side */
+
+.leader_board{
+    margin: 30px;
+}
+
+.regRo{
+    padding: 50px;
+}
+
+
+td{
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+td{background-color: #506f6c ;
+box-shadow: 5px 5px 5px black ;    
+}
+thead td{
+    background-color: #176B87; 
+    font-weight: bold;
+}
+.bg_img>img{
+    position: absolute;
+    z-index: -5;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media screen and (max-width:1024px) {
+    .display_body{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+   .bg_img>img{
+    position: absolute;
+    z-index: -5;
+    height: 300vh;
+    width: 100vw;
+}
+    form{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .bg_img>img{
+        position: absolute;
+        z-index: -5;
+        height: 200vh;
+        width: 100vw;
+    }
+
+form{
+    margin: 30px;
+    border: 4px solid #030f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    height: 30%;
+    width: 50%;
+}
+
+}
+
+.error_msg{
+    color: rgb(207, 8, 8);
+    font-weight: bold;
+    padding: 20px;
+
+    text-align: center;
+   display: none;
+}
+.delete_btn:hover ,.edit_btn:hover{
+    cursor: pointer;
+  
+}
+.edit:hover,.delete:hover{
+    background-color: #0a425a;
+}
